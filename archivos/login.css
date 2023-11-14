@@ -1,0 +1,27 @@
+:root {
+    --amarillo: #ffc857;
+    --azul: #3f4464;
+    --blanco: #f1f3f9;
+    --negro: #1f2232;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+    figure img {
+        margin: 0;
+        width: 100%;
+    }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+}
