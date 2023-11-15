@@ -1,0 +1,180 @@
+:root {
+    --amarillo: #ffc857;
+    --azul: #3f4464;
+    --blanco: #f1f3f9;
+    --negro: #1f2232;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+    figure img {
+        margin: 0;
+        width: 100%;
+    }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+
+figure#logo {
+    width: 100px;
+    
+}
+
+
+
+main#cuerpo {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(325deg,var(--blanco), var(--azul));
+
+}
+
+#contenedor_logo {
+    position: absolute;
+    top: 94px;
+}
+
+#contenedor_formulario {
+    background-color: rgba(250, 250, 250, 0.35);
+    padding: 28px 34px;
+    border-radius: 16px;
+    margin: 0;
+    width: 280px;
+    height: 270px;
+
+}
+
+    .campos {
+        margin: 20px 0px;
+        position: relative;
+        color: var(--blanco);
+    }
+
+        .campos .campo {
+            width: 210px;
+            height: 35px;
+            background: var(--azul);
+            border: none;
+            padding: 0px 35px;
+            border-radius: 4px;
+        }
+
+        .campos i{
+            position: absolute;
+            background: var(--negro);
+            width: 27px;
+            height: 35px;
+            border-radius: 0px 8px 8px 0px;
+            padding: 10px 0px 0px 7px;
+        }
+
+        .campos input::placeholder {
+            color: #f1f3f9;
+        }
+
+#titulo {
+    display: grid;
+    place-items: center;
+    font-size: 25px
+}
+
+#btn_entrar {
+    background: var(--negro);
+    border: none;
+    border-radius: 2em;
+    color: var(--blanco);
+    margin: 8px 0 0 0;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+#firma {
+    bottom: 0;
+    color: var(--negro);
+    font-size: 12px;
+    left: 0;
+    padding: 1em;
+    margin: 0;
+    position: absolute;
+    text-align: right;
+    width: 100%; 
+}
+
+@media screen and (min-width: 700px) {
+    
+    main#cuerpo {
+        background:  url('fondo_tabletas.jpg') center center / cover no-repeat; 
+    }
+
+    #contenedor_logo {
+        top: 282px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+    body{
+        font-size: 19px;
+        
+    }
+
+    main#cuerpo {
+        background: url('fondo_pc.jpg') center center / cover no-repeat;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #contenedor_logo {
+        top: 0;
+        z-index: 1;
+    }
+
+        figure#logo {
+            width: 70px;
+        }
+
+    #contenedor_formulario {
+        width: 50vw;
+        height: 100vh;
+        position: relative;
+        border-radius: 0 12px 12px 0;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
+        #titulo {
+            position: absolute;
+            left: 41%;
+            top: 295px;
+        }
+
+            #formulario {
+                display: grid;
+                justify-content: center;
+                margin-top: 325px;
+            }
+
+                .campos  i{
+                    padding: 8px 0px 0px 4px;
+                }
+
+    #firma {
+        color: var(--blanco);
+    }
+}
