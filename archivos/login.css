@@ -25,3 +25,87 @@ body, html {
 body {
     font-size: 14px;
 }
+
+
+figure#logo {
+    width: 100px;
+    
+}
+
+#contenedor_logo {
+    position: absolute;
+    top: 227px;
+}
+
+main#cuerpo {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(325deg,var(--blanco), var(--azul));
+
+}
+
+#contenedor_formulario {
+    background-color: rgba(250, 250, 250, 0.35);
+    padding: 28px 34px;
+    border-radius: 16px;
+    margin: 0;
+    width: 280px;
+    height: 270px;
+
+}
+
+    .campos {
+        margin: 20px 0px;
+        position: relative;
+        color: var(--blanco);
+    }
+
+        .campos .campo {
+            width: 210px;
+            height: 35px;
+            background: var(--azul);
+            border: none;
+            padding: 0px 35px;
+        }
+
+        .campos i{
+            position: absolute;
+            background: var(--negro);
+            width: 27px;
+            height: 35px;
+            border-radius: 0px 8px 8px 0px;
+            padding: 10px 0px 0px 7px;
+        }
+
+#titulo {
+    display: grid;
+    place-items: center;
+    font-size: 25px
+}
+
+#btn_entrar {
+    background: var(--negro);
+    border: none;
+    border-radius: 2em;
+    color: var(--blanco);
+    margin: 8px 0 0 0;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+#firma {
+    bottom: 0;
+    color: var(--negro);
+    font-size: 12px;
+    left: 0;
+    padding: 1em;
+    margin: 0;
+    position: absolute;
+    text-align: right;
+    width: 100%; 
+}
