@@ -82,6 +82,10 @@ main#cuerpo {
             padding: 10px 0px 0px 7px;
         }
 
+        .campos input::placeholder {
+            color: #f1f3f9;
+        }
+
 #titulo {
     display: grid;
     place-items: center;
@@ -108,4 +112,65 @@ main#cuerpo {
     position: absolute;
     text-align: right;
     width: 100%; 
+}
+
+@media screen and (min-width: 700px) {
+    
+    main#cuerpo {
+        background:  url('fondo_tabletas.jpg') center center / cover no-repeat; 
+    }
+
+    #contenedor_logo {
+        top: 282px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+    body{
+        font-size: 19px;
+        
+    }
+
+    main#cuerpo {
+        background: url('fondo_pc.jpg') center center / cover no-repeat;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #contenedor_logo {
+        top: 0;
+    }
+
+        figure#logo {
+            width: 70px;
+        }
+
+    #contenedor_formulario {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0 16px 16px 0;
+        
+    }
+        #titulo {
+            position: absolute;
+            left: 42%;
+            top: 295px;
+        }
+
+            #formulario {
+                display: grid;
+                justify-content: center;
+                margin-top: 325px;
+            }
+
+                .campos  i{
+                    padding: 8px 0px 0px 4px;
+                }
+
+    #firma {
+        color: var(--blanco);
+    }
 }
