@@ -20,10 +20,12 @@ figure {
 body, html {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     font-size: 14px;
+    cursor: url(../archivos/cursor-normal.png), auto;
 }
 
 
@@ -32,10 +34,7 @@ figure#logo {
     
 }
 
-#contenedor_logo {
-    position: absolute;
-    top: 227px;
-}
+
 
 main#cuerpo {
     min-height: 100vh;
@@ -47,6 +46,11 @@ main#cuerpo {
     place-items: center;
     background: linear-gradient(325deg,var(--blanco), var(--azul));
 
+}
+
+#contenedor_logo {
+    position: absolute;
+    top: 94px;
 }
 
 #contenedor_formulario {
@@ -71,6 +75,7 @@ main#cuerpo {
             background: var(--azul);
             border: none;
             padding: 0px 35px;
+            border-radius: 4px;
         }
 
         .campos i{
@@ -100,6 +105,7 @@ main#cuerpo {
     margin: 8px 0 0 0;
     padding: 10px 15px;
     width: 100%;
+    cursor: url(cursor-mano.png), auto;
 }
 
 #firma {
@@ -134,13 +140,13 @@ main#cuerpo {
 
     main#cuerpo {
         background: url('fondo_pc.jpg') center center / cover no-repeat;
-        position: relative;
         display: flex;
         align-items: flex-start;
     }
 
     #contenedor_logo {
         top: 0;
+        z-index: 1;
     }
 
         figure#logo {
@@ -148,15 +154,16 @@ main#cuerpo {
         }
 
     #contenedor_formulario {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        border-radius: 0 16px 16px 0;
-        
+        width: 50vw;
+        height: 100vh;
+        position: relative;
+        border-radius: 0 12px 12px 0;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
     }
         #titulo {
             position: absolute;
-            left: 42%;
+            left: 41%;
             top: 295px;
         }
 
